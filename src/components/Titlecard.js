@@ -1,19 +1,22 @@
-import katie from '../assets/katie.png'
+
 import Star from '../assets/Star.png'
 
 
-export function Titlecard() {
+export function Titlecard(props) {
+    console.log(props)
     return (
         <div className="title-container">
-            <img className="title-photo" src={katie} alt="Katie Zaferes" />
+            <img className="title-photo" src={`${props.img}`} alt="Katie Zaferes" />
 
             <div className="title-details">
                 <div className="first">
-                    <img className="title-star" src={Star} />
-                    <div>5.0 (6) * USA</div>
+                    <img className="title-star" src={Star} alt="star"/>
+                    <span>{props.rating} </span>
+                    <span>({props.reviewcount})</span>
+                    <span>{props.country}</span>
                 </div>
-                <span>Life lessons with Katie Zaferes</span>
-                <span> <span>From $136 </span>/ person</span>
+                <span>{props.title}</span>
+                <span> <span>From ${props.price} </span>/ person</span>
             </div>
 
         </div>

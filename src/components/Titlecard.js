@@ -11,9 +11,9 @@ export function Titlecard(props) {
             <div className="title-details">
                 <div className="first">
                     <img className="title-star" src={Star} alt="star" />
-                    <span>{props.rating} </span>
+                    <span>{props.rating} </span>       
                     <span>({props.reviewcount})</span>
-                    <span>{props.country}</span>
+                    <span>{props.location}</span>
                 </div>
                 <span>{props.title}</span>
                 <span> <span>From ${props.price} </span>/ person</span>

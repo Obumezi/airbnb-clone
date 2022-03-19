@@ -1,4 +1,4 @@
-import airbnb from '../assets/airbnb.png'
+import airbnb from './assets/airbnb.png'
 
 
 export function Navbar() {

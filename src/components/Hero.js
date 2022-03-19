@@ -1,4 +1,4 @@
-import stock from '../assets/stock.png'
+import stock from './assets/stock.png'
 
 export function Hero() {
     return (

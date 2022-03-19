@@ -5,12 +5,14 @@ import { Titlecard } from './components/Titlecard';
 
 
 function App() {
+  
   return (
     <div className="App">
+     
       <Navbar />
       <Hero />
       <Titlecard
-        img="katie.png"
+        
         rating={5.0}
         reviewcount={6}
         country="Nigeria"

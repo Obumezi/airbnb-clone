@@ -1,4 +1,4 @@
-export default [
+let cardDetails = [
     {
         id: 1,
         title: "Life Lessons with Katie Zaferes",
@@ -39,3 +39,5 @@ export default [
         openSpots: 3,
     }
 ]
+
+export default cardDetails

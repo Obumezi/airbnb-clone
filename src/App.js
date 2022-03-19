@@ -7,19 +7,21 @@ import Data from './Data'
 function App() {
   const cardElements = Data.map(cards => {
     return <Titlecard
+      key={cards.id} //this is required when mapping over data a key is always required
       title={cards.title}
       price={cards.price}
       location={cards.location}
-      reviewCount= {cards.id.reviewCount}/>
+      rating={cards.stats.rating}
+      reviewcount={cards.stats.reviewCount} />
   })
   return (
     <div className="App">
-
       <Navbar />
       <Hero />
 
-
-      {cardElements}
+      <div className="titlecard">
+        {cardElements}
+      </div>
 
       {/* rating={5.0}
          reviewcount={6}

@@ -62,3 +62,26 @@ body {
   display: flex;
   gap: 5px;
 }
+
+
+.title-photo{
+  width: auto;
+}
+
+.card-badge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0  auto;
+  width: 200px;
+}

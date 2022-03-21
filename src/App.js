@@ -8,11 +8,13 @@ function App() {
   const cardElements = Data.map(cards => {
     return <Titlecard
       key={cards.id} //this is required when mapping over data a key is always required
+      coverImg={cards.coverImg}
       title={cards.title}
       price={cards.price}
       location={cards.location}
       rating={cards.stats.rating}
-      reviewcount={cards.stats.reviewCount} />
+      reviewcount={cards.stats.reviewCount}
+      openSpoys={cards.openSpots} />
   })
   return (
     <div className="App">

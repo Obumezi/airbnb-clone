@@ -23,7 +23,7 @@ let cardDetails = [
             reviewCount: 30
         },
         location: "Online",
-        openSpots: 27,
+        openSpots: 88,
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ let cardDetails = [
             reviewCount: 2
         },
         location: "Norway",
-        openSpots: 3,
+        openSpots: 8,
     }
 ]
 
